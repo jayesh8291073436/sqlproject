@@ -72,6 +72,7 @@ alter table department add foreign key (pro_id) references employee (empployee_i
 #adding foreign key to project table 
 alter table projects add column dep_id int;
 alter table projects add column emp_id int;
+
 alter table projects add foreign key (dep_id) references department (department_id);
 alter table projects add foreign key (emp_id) references employee (empployee_id);
 
